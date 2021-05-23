@@ -10,7 +10,7 @@ $FABRIKAM_Subscription = "3a5934a8-a001-4d46-b8e3-6b545a0091eb" #Insert the Tena
 $FABRIKAM_DOMAIN = "testeFABRIKAMmail.onmicrosoft.com" #Exchange Domain
 $FABRIKAM_ADMIN = admin@testeFABRIKAMmail.onmicrosoft.com #Exchange Admin
 
-#Execute o Script com o admin testeFABRIKAMmail.onmicrosoft.com
+#RUN THE SCRIPT WITH THE ADMIN OF testeFABRIKAMmail.onmicrosoft.com
 
 .\SetupCrossTenantRelationshipForTargetTenant.ps1 `
 -ResourceTenantDomain $CONTOSO_DOMAIN `
@@ -28,5 +28,4 @@ $FABRIKAM_ADMIN = admin@testeFABRIKAMmail.onmicrosoft.com #Exchange Admin
 -KeyVaultAuditStorageAccountSKU "Standard_GRS" `
 -SubscriptionId $FABRIKAM_Subscription `
 -AzureResourceLocation 'Brazil South' `
-
 -KeyVaultAuditStorageAccountLocation 'Brazil South'
